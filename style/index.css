@@ -7,9 +7,15 @@
   margin: 0;
 }
 
+.hero-section {
+  height: 100vh;
+  background-color: lightcoral;
+}
+
 header {
   background-color: lightblue;
   padding-top: 30px;
+  margin-bottom: 50vh;
 }
 
 header > nav {
@@ -39,7 +45,7 @@ header > nav {
 .navigation > ul {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 25px;
 }
 
 .header-middle h1 {
@@ -66,4 +72,29 @@ header > nav {
   padding: 5px;
 }
 
+.large-screen {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.btn-container button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+
+.large-screen {
+  margin-top: auto;
+}
+
+.medium-screen {
+  display: none;
+}
 /* end of header section */
