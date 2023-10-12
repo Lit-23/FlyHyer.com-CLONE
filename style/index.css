@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+body {
+  padding-bottom: 2000px;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -129,3 +133,44 @@ header > nav {
 }
 
 /* end of service section */
+
+/* flexible services */
+
+.flexible-services h1 {
+  height: 10vh;
+  padding: 0 4%;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.flex-solution h2,
+.flex-demand h2,
+.flex-flight h2 {
+  padding-bottom: 68vh;
+}
+
+.flex-service-container {
+  display: flex;
+}
+
+.flex-solution,
+.flex-demand,
+.flex-flight {
+  height: 90vh;
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.flex-solution {
+  background-image: url("/images/solution1.jpg");
+  background-position: center;
+  color: white;
+}
+
+.flex-demand {
+  background-color: lightblue;
+}
+
+.flex-flight {
+  background-color: lightpink;
+}
