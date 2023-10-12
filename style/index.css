@@ -174,3 +174,29 @@ header > nav {
 .flex-flight {
   background-color: lightpink;
 }
+
+/* end of flexible section */
+
+/* experience section */
+
+.content-container {
+  display: flex;
+}
+
+.experience-container {
+  width: 50vw;
+  display: flex;
+}
+
+.icon-bg {
+  flex: 1;
+  height: 80px;
+  width: 100px;
+  border: dashed;
+  border-width: 2px;
+  border-color: rgb(139, 136, 136);
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
