@@ -98,3 +98,34 @@ header > nav {
   display: none;
 }
 /* end of header section */
+
+/* services section */
+
+.services {
+  padding: 150px 4%;
+}
+
+.services h1 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.services hr {
+  margin: 20px 0;
+}
+
+.service-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1;
+  border-radius: 15px;
+  padding: 40px 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* end of service section */
