@@ -305,10 +305,6 @@ article hr {
   flex: 1;
 }
 
-.experience-description p {
-  width: 300px;
-}
-
 .content-container {
   display: flex;
 }
@@ -337,6 +333,37 @@ article hr {
   align-items: center;
   justify-content: center;
   margin-bottom: 4%;
+}
+
+@media screen and (min-width: 1280px) {
+  .experience-description p {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .experience-description {
+    display: block;
+  }
+
+  .experience-container {
+    padding-top: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    flex: 1;
+    gap: 30px;
+  }
+  
+  .experience-item {
+    flex: 1;
+    min-width: 300px;
+  }
+
 }
 
 /* end of experience section */
