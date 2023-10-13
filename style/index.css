@@ -200,10 +200,11 @@ article hr {
 /* flexible services */
 
 .flexible-services h1 {
-  height: 15vh;
-  padding: 0 4%;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 600;
+  padding: 1% 4%;
+  background-color: #081b29;
+  color: #ededed;
 }
 
 .flexible-services p {
@@ -227,6 +228,7 @@ article hr {
 
 .flex-service-container {
   display: flex;
+  margin-top: 0;
 }
 
 .flex-service-container h2 a {
@@ -249,6 +251,23 @@ article hr {
   height: 85vh;
   flex: 1;
   padding: 2% 4%;
+}
+
+@media screen and (max-width: 1279px) {
+  .flex-service-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-solution,
+  .flex-demand,
+  .flex-flight {
+    background-size: cover;
+  }
+
+  .flex-demand {
+    background-position: center;
+  }
 }
 
 .flex-solution {
