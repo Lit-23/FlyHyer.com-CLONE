@@ -168,9 +168,31 @@ header > nav {
 
 .service-item {
   flex: 1;
+  min-width: 250px;
   border-radius: 15px;
   padding: 40px 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+article hr {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .service-container {
+    display: block;
+  }
+
+  .service-item {
+    border: none;
+    padding: 2% 4%;
+    box-shadow: none;
+  }
+
+  article hr {
+    display: block;
+    padding: 0 4%;
+  }
 }
 
 /* end of service section */
