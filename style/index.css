@@ -47,14 +47,14 @@ header > nav {
   text-decoration: underline;
 }
 
-
 .navigation > ul {
   list-style: none;
   display: flex;
   gap: 25px;
 }
 
-.header-middle h1 {
+.header-middle h1,
+.medium-screen article h1 {
   margin-top: auto;
   font-size: 45px;
   font-weight: 600;
@@ -78,7 +78,7 @@ header > nav {
   padding: 5px;
 }
 
-.large-screen {
+.lg-article {
   display: flex;
   justify-content: space-between;
   padding: 0 4%;
@@ -106,13 +106,42 @@ header > nav {
   color: #ededed;
 }
 
-.large-screen {
-  margin-top: auto;
-}
-
 .medium-screen {
   display: none;
 }
+
+.medium-screen article {
+  padding: 0 4%;
+}
+
+.medium-screen article .tagline {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 3% 0;
+}
+
+.medium-screen .logo-bg {
+  height: 60px;
+  width: 60px;
+  border: dashed;
+  border-width: 2px;
+  border-color: black;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .medium-screen {
+    display: block;
+  }
+
+  .large-screen {
+    display: none;
+  }
+}
+
 /* end of header section */
 
 /* services section */
