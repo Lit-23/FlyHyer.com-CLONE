@@ -407,6 +407,32 @@ article hr {
 
 /* footer */
 
+@media screen and (min-width: 1280px) {
+  .nav-section {
+    gap: 300px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .nav-section {
+    flex-direction: column;
+  }
+
+  .nav-section .soc-med {
+    margin-bottom: 4%;
+  }
+
+  .nav-section .footer-nav-container {
+    gap: 4% !important;
+  }
+
+  .footer-nav-container .nav-item {
+    flex: 1;
+    min-width: 150px !important;
+    padding-bottom: 4%;
+  }
+}
+
 footer {
   background-color: #081b29;
   padding: 0 4%;
@@ -429,7 +455,6 @@ footer h2 {
 
 .nav-section {
   display: flex;
-  gap: 300px;
 }
 
 .nav-section .follow-title {
