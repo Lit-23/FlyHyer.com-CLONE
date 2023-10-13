@@ -363,7 +363,6 @@ article hr {
     flex: 1;
     min-width: 300px;
   }
-
 }
 
 /* end of experience section */
@@ -384,8 +383,14 @@ article hr {
 }
 
 .booking-section h2 {
-  font-size: 80px;
+  font-size: 10vw;
   font-weight: 600;
+}
+
+@media screen and (min-width: 840px) {
+  .booking-section h2 {
+    font-size: 80px;
+  }
 }
 
 .booking-section h2 a {
