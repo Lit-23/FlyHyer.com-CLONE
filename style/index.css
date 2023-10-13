@@ -9,11 +9,11 @@
 
 .hero-section {
   height: 100vh;
-  background-color: lightcoral;
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
 }
 
 header {
-  background-color: lightblue;
   padding-top: 30px;
   margin-bottom: 50vh;
 }
@@ -40,7 +40,13 @@ header > nav {
   text-decoration: none;
   color: black;
   font-size: 18px;
+  transition: 0.3s;
 }
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
 
 .navigation > ul {
   list-style: none;
@@ -80,6 +86,10 @@ header > nav {
   font-size: 25px;
 }
 
+.tagline {
+  color: rgb(44, 44, 44);
+}
+
 .btn-container button {
   padding: 8px 20px;
   border: none;
@@ -88,6 +98,12 @@ header > nav {
   font-weight: 600;
   color: white;
   background-color: black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-container a {
+  text-decoration: none;
+  color: #ededed;
 }
 
 .large-screen {
@@ -139,14 +155,41 @@ header > nav {
   font-weight: 600;
 }
 
+.flexible-services p {
+  color: #ededed;
+  font-weight: 500;
+}
+
+.flexible-services .flex-demand p {
+  color: black;
+}
+
 .flex-solution h2,
 .flex-demand h2,
 .flex-flight h2 {
-  padding-bottom: 63vh;
+  padding-top: 65vh;
+}
+
+.flex-demand h2 {
+  color: black;
 }
 
 .flex-service-container {
   display: flex;
+}
+
+.flex-service-container h2 a {
+  text-decoration: none;
+  color: #ededed;
+  transition: 0.3s;
+}
+
+.flex-service-container h2 a:hover {
+  text-decoration: underline;
+}
+
+.flex-service-container .flex-demand h2 a {
+  color: black;
 }
 
 .flex-solution,
@@ -164,11 +207,13 @@ header > nav {
 }
 
 .flex-demand {
-  background-color: lightblue;
+  background-image: url(/images/flights1.jpg);
+  background-size: cover;
 }
 
 .flex-flight {
-  background-color: lightpink;
+  background-image: url(/images/window-view.jpg);
+  background-size: cover;
 }
 
 /* end of flexible section */
@@ -324,7 +369,7 @@ footer h2 {
 .nav-item ul a {
   text-decoration: none;
   color: #ededed;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .nav-item ul a:hover {
