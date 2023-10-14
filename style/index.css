@@ -200,10 +200,9 @@ article hr {
 /* flexible services */
 
 .flexible-services h1 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 600;
-  padding: 1% 4%;
-  background-color: #081b29;
+  text-decoration: underline;
   color: #ededed;
 }
 
@@ -216,7 +215,10 @@ article hr {
   color: black;
 }
 
-.flex-solution h2,
+.flex-solution h2 {
+  padding-top: 57vh;
+}
+
 .flex-demand h2,
 .flex-flight h2 {
   padding-top: 65vh;
