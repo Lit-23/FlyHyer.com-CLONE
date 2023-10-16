@@ -10,12 +10,37 @@
 /*  header section */
 
 @media screen and (max-width: 959px) {
-  header nav .nav-right {
+  .nav-right .navigation-ul {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 60px;
+    right: 4%;
+    width: 350px;
+    height: 300px;
+    border-bottom-right-radius: 15%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: #081b29;
+  }
+
+  .nav-right .active {
+    opacity: 1;
     display: block;
   }
 
-  .nav-right .navigation-ul {
-    display: none;
+  .navigation-ul ul {
+    display: block !important;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .navigation-ul ul li {
+    margin-bottom: 15px;
+    color: #ededed;
+  }
+
+  .navigation-ul ul li a {
+    color: #ededed;
   }
 }
 

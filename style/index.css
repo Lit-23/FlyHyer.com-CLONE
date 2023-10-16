@@ -79,6 +79,10 @@ header > nav {
   border-radius: 50%;
 }
 
+.header-right > a:hover {
+  opacity: 0.8;
+}
+
 .header-right > a > img {
   padding: 5px;
 }
@@ -104,6 +108,10 @@ header > nav {
   color: white;
   background-color: black;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-container button:hover {
+  opacity: 0.8;
 }
 
 .btn-container a {
@@ -144,6 +152,39 @@ header > nav {
 
   .large-screen {
     display: none;
+  }
+
+  .medium-screen .navigation {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 80px;
+    right: 4%;
+    width: 350px;
+    height: 300px;
+    border-bottom-right-radius: 15%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: black;
+  }
+
+  .medium-screen .active {
+    opacity: 1;
+    display: block;
+  }
+
+  .navigation ul {
+    display: block !important;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .navigation ul li {
+    margin-bottom: 15px;
+    color: #ededed;
+  }
+
+  .navigation ul li a {
+    color: #ededed;
   }
 }
 
