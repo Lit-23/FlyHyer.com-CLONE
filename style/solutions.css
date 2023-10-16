@@ -38,8 +38,8 @@
 }
 
 .logo-bg {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border: dashed;
   border-width: 2px;
   border-color: #ededed;
@@ -51,6 +51,11 @@
 }
 
 .logo-bg h1 {
+  color: #ededed;
+}
+
+.logo-bg h1 a {
+  text-decoration: none;
   color: #ededed;
 }
 
@@ -87,10 +92,15 @@ nav .nav-right {
   background-color: white;
   border: none;
   border-radius: 50%;
-  padding: 15px;
+  padding: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+
+.hamburger-menu a:hover {
+  opacity: 0.8;
 }
 
 .header-section article {
